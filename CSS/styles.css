@@ -97,9 +97,12 @@ body {
 /* .sections */
 
 .container {
-  width: 1158px;
+  width: 100%;
+  max-width: 1158px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .features-list {
