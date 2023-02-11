@@ -15,11 +15,37 @@ body {
   letter-spacing: 0.02em;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .list {
   list-style: none;
 }
 
 /* .header */
+
+.header-div {
+  display: flex;
+  align-items: center;
+
+  height: 72px;
+}
+
+.main-nav {
+  display: flex;
+}
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -38,17 +64,37 @@ body {
   color: var(--color-primary);
 }
 
+.site-nav {
+  display: flex;
+  margin-left: 76px;
+}
+
+.site-nav .item {
+  margin-right: 40px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
 .site-nav .link {
-  text-decoration: none;
+  display: block;
+
+  color: var(--color-primary);
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  color: var(--color-primary);
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--btn-pressed);
+}
+
+.main-address {
+  display: flex;
+  margin-left: auto;
 }
 
 .contact-nav .link {
@@ -58,6 +104,14 @@ body {
   line-height: 1.5;
 }
 
+.contact-nav {
+  display: flex;
+}
+
+.contact-nav .item + .item {
+  margin-left: 40px;
+}
+
 .contact-nav .link:hover,
 .contact-nav .link:focus {
   color: var(--btn-pressed);
@@ -65,16 +119,17 @@ body {
 
 /* .section 1 */
 
-
 .hero {
   background-color: var(--color-primary);
+  height: 600px;
+  margin-bottom: 48px;
+  text-align: center;
 }
 
 .hero-title {
   color: var(--white);
   font-size: 56px;
   line-height: 1.1;
-  text-align: center;
 }
 
 .main-button {
@@ -96,6 +151,10 @@ body {
 
 /* .sections */
 
+.section {
+  text-align: center;
+}
+
 .container {
   width: 100%;
   max-width: 1158px;
@@ -103,6 +162,18 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.features {
+display: flex;
+}
+
+.features .item {
+  margin-right: 24px;
+}
+
+.features .item:last-child {
+  margin-right: 0;
 }
 
 .features-list {
@@ -122,6 +193,30 @@ body {
   font-size: 36px;
   line-height: 1.1;
   color: var(--color-primary);
+}
+
+.works {
+  display: flex;
+}
+
+.works .item {
+  margin-right: 24px;
+}
+
+.works .item:last-child {
+  margin-right: 0;
+}
+
+.team {
+  display: flex;
+}
+
+.team .item {
+  margin-right: 24px;
+}
+
+.team .item:last-child {
+  margin-right: 0;
 }
 
 .team-list {
