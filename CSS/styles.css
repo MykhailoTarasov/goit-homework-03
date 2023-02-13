@@ -220,6 +220,9 @@ ul {
   line-height: 1.5;
   font-weight: 500;
   color: var(--color-primary);
+
+  margin-bottom: 8px;
+  width: 264px;
 }
 
 /* works */
