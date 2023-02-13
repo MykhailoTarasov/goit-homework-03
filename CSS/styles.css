@@ -6,6 +6,11 @@
   --logo-primary: #4d5ae5;
   --btn-pressed: #404bbf;
   --white: #ffffff;
+  --header-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --header-border: #000000;
+  --main-button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --team-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 body {
@@ -41,9 +46,16 @@ ul {
   align-items: center;
 
   height: 72px;
+}
 
-  border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.header-portfolio {
+  display: flex;
+  align-items: center;
+
+  height: 72px;
+
+  border: 1px solid var(--header-border);
+  box-shadow: var(--header-shadow);
 }
 
 .main-nav {
@@ -151,7 +163,7 @@ ul {
   width: 169px;
   height: 56px;
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--main-button-shadow);
   border-radius: 4px;
 }
 
@@ -245,11 +257,10 @@ ul {
   margin-bottom: 0;
 }
 
-.team .item {
+.team > .item {
   margin-right: 24px;
   background-color: var(--white);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: var(--team-shadow);
   border-radius: 0px 0px 4px 4px;
 
   display: flex;
@@ -265,6 +276,11 @@ ul {
   line-height: 1.2;
   font-weight: 500;
   color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.team-content {
+  padding: 32px 16px;
 }
 
 /* .footer */
@@ -321,8 +337,6 @@ ul {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.02em;
 
-  width: 116px;
-  height: 48px;
   padding: 12px 24px;
 
   border: 1px solid var(--light-color);
@@ -344,12 +358,17 @@ ul {
   flex-wrap: wrap;
 }
 
-.portfolio .item {
+.portfolio > .item {
   width: 360px;
   margin-right: 24px;
   margin-bottom: 48px;
 
-  border: 1px solid #E7E9FC;
+    border: 1px solid var(--light-color);
+}
+
+.card-content {
+  padding: 32px 0 32px 16px;
+
 }
 
 .portfolio .item:nth-child(3n) {
@@ -365,6 +384,8 @@ ul {
   line-height: 1.2;
   font-weight: 500;
   color: var(--color-primary);
+
+  margin-bottom: 8px;
 }
 
 .portfolio .link {
