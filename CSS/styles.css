@@ -7,10 +7,9 @@
   --btn-pressed: #404bbf;
   --white: #ffffff;
   --header-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  --header-border: #000000;
   --main-button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --team-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 body {
@@ -27,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
+  margin: 0;
 }
 
 ul {
@@ -45,17 +44,8 @@ ul {
   display: flex;
   align-items: center;
 
-  height: 72px;
-}
-
-.header-portfolio {
-  display: flex;
-  align-items: center;
-
-  height: 72px;
-
-  border: 1px solid var(--header-border);
-  box-shadow: var(--header-shadow);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .main-nav {
@@ -137,7 +127,6 @@ ul {
 .hero {
   background-color: var(--color-primary);
   text-align: center;
-  height: 600px;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -161,7 +150,7 @@ ul {
 
   padding: 16px 32px;
   width: 169px;
-  height: 56px;
+  margin-top: 48px;
 
   box-shadow: var(--main-button-shadow);
   border-radius: 4px;
@@ -199,8 +188,8 @@ ul {
 /* features */
 
 .features-main {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .features {
@@ -209,6 +198,7 @@ ul {
 
 .features .item {
   margin-right: 24px;
+  flex-basis: calc((1128px - 3 * 24px) / 4);
 }
 
 .features .item:last-child {
@@ -222,15 +212,13 @@ ul {
   color: var(--color-primary);
 
   margin-bottom: 8px;
-  width: 264px;
 }
 
 /* works */
 
 .works-main {
   text-align: center;
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 .works {
@@ -250,7 +238,6 @@ ul {
 .employees {
   text-align: center;
   background-color: var(--btn-background);
-  height: 732px;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -283,14 +270,13 @@ ul {
 }
 
 .team-content {
-  padding: 32px 16px;
+  padding: 32px;
 }
 
 /* .footer */
 
 .footer {
   background-color: var(--color-primary);
-  height: 310px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -309,12 +295,25 @@ ul {
 
 /* .portfolio */
 
+.header-portfolio {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid var(--light-color);
+}
+
+.portfolio-main {
+  padding-bottom: 120px;
+}
+
 .filters {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 96px;
-  margin-bottom: 72px;
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 
 .filters .item {
@@ -352,26 +351,23 @@ ul {
   background-color: var(--btn-pressed);
 }
 
-.portfolio-main {
-  margin-bottom: 120px;
-}
-
 .portfolio {
   display: flex;
   flex-wrap: wrap;
 }
 
 .portfolio > .item {
-  width: 360px;
   margin-right: 24px;
   margin-bottom: 48px;
 
-    border: 1px solid var(--light-color);
+  flex-basis: calc((1128px - 2 * 24px) / 3);
 }
 
 .card-content {
   padding: 32px 0 32px 16px;
-
+  border-left: 1px solid var(--light-color);
+  border-right: 1px solid var(--light-color);
+  border-bottom: 1px solid var(--light-color);
 }
 
 .portfolio .item:nth-child(3n) {
