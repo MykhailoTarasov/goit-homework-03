@@ -6,7 +6,6 @@
   --logo-primary: #4d5ae5;
   --btn-pressed: #404bbf;
   --white: #ffffff;
-  --header-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --main-button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --team-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -43,9 +42,6 @@ ul {
 .header-div {
   display: flex;
   align-items: center;
-
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .main-nav {
@@ -59,6 +55,9 @@ ul {
   text-decoration: none;
   font-weight: 800;
   letter-spacing: 0.03em;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo-begin {
@@ -90,6 +89,9 @@ ul {
   line-height: 1.5;
   font-weight: 500;
   text-decoration: none;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .site-nav .link:hover,
@@ -100,6 +102,7 @@ ul {
 .main-address {
   display: flex;
   margin-left: auto;
+  font-style: normal;
 }
 
 .contact-nav .link {
@@ -107,6 +110,9 @@ ul {
   text-decoration: none;
   font-size: 16px;
   line-height: 1.5;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .contact-nav {
@@ -270,7 +276,7 @@ ul {
 }
 
 .team-content {
-  padding: 32px;
+  padding: 32px 0;
 }
 
 /* .footer */
@@ -298,22 +304,20 @@ ul {
 .header-portfolio {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 
   border-bottom: 1px solid var(--light-color);
 }
 
 .portfolio-main {
   padding-bottom: 120px;
+  padding-top: 96px;
 }
 
 .filters {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .filters .item {
