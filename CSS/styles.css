@@ -137,10 +137,18 @@ img {
 /* section hero*/
 
 .hero {
-  background-color: var(--color-primary);
+  background-color: var(--background-hero);
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
+
+  max-width: 1440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7),
+rgba(46, 47, 66, 0.7)),
+  url(../images/people-office\ 1.jpg);
 }
 
 .hero-title {
@@ -197,7 +205,7 @@ img {
   margin-bottom: 72px;
 }
 
-/* features */
+/* section features */
 
 .features-main {
   padding-top: 120px;
@@ -213,6 +221,31 @@ img {
   flex-basis: calc((1128px - 3 * 24px) / 4);
 }
 
+.features .item::before {
+  background-color: var(--btn-background);
+  display: block;
+  content: '';
+  height: 112px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features .item:nth-child(1)::before {
+  background-image: url(../images/antenna\ 1.png);
+}
+
+.features .item:nth-child(2)::before {
+  background-image: url(../images/clock\ 1.png);
+}
+
+.features .item:nth-child(3)::before {
+  background-image: url(../images/diagram\ 1.png);
+}
+
+.features .item:nth-child(4)::before {
+  background-image: url(../images/astronaut\ 1.png);
+}
+
 .features .item:last-child {
   margin-right: 0;
 }
@@ -224,6 +257,7 @@ img {
   color: var(--color-primary);
 
   margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 /* works */
